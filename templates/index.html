@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style .css') }}">
+    <title>Library Management System</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: rgba(144, 82, 82, 0.3);
+           
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Content container styling */
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            padding: 30px 40px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div class="navbar">
+    <h1>Library Management System</h1>
+    <div class="nav-links">
+    <nav>
+        <a href="{{ url_for('add_book') }}">Add Book</a>
+        <a href="{{ url_for('issue_book') }}">Issue Book</a>
+        <a href="{{ url_for('return_book') }}">Return Book</a>
+        <a href="{{ url_for('view_borrowed') }}">View Borrowed Books</a>
+        <a href="{{ url_for('undo_return') }}">Undo Last Return</a>
+    </nav>
+</div>
+</div>
+        <!-- Main content -->
+        <div class="container">
+            <h1>Welcome to the Library Management System</h1>
+            <p>Select an action from the navigation bar above.</p>
+        </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

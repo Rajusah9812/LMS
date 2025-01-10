@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Return Book</title>
+    <link rel="stylesheet" href=static/returnBook.css>
+</head>
+<body>
+    <div class="containerone">
+    <h1>Return Book</h1>
+    </div>
+    <div class="bracket">
+    <form method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <button id="return" type="submit">Return Book</button>
+    </form>
+</div>
+    <a  id="last" href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

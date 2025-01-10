@@ -1,0 +1,170 @@
+/* General body styling */
+body {
+    font-family: 'Georgia', serif; /* Classical serif font for elegance */
+    background: linear-gradient(to bottom right, #e8f1f7, #f4f4f4); /* Subtle gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333;
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow for depth */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Subtle animation on load */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* Even spacing between form elements */
+}
+
+label {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: bold; /* Emphasize labels for readability */
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #459dea; /* Highlight border on focus */
+    box-shadow: 0 0 6px rgba(69, 157, 234, 0.5); /* Glow effect */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #459dea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+button:hover {
+    background-color: #357bcc; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+button:active {
+    background-color: #2a5f99; /* Even darker blue on click */
+    transform: translateY(1px); /* Slight push down */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Back link styling */
+.back-link {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #459dea;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.back-link a:hover {
+    color: #357bcc;
+    border-color: #357bcc; /* Underline effect */
+}
+
+/* Responsive gap */
+.gap {
+    height: 200px;
+    width: 200px;
+    background-color: #459dea;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

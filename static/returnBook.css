@@ -1,0 +1,123 @@
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Form container styling */
+.form-container {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #6c63ff;
+    background-color: #eef;
+    outline: none;
+}
+
+/* Submit button styling */
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #594dcf;
+    transform: scale(1.05);
+}
+
+/* Footer link styling */
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #594dcf;
+    border-bottom-color: #594dcf;
+}
+.containerone{
+    height: 20px;
+    
+    margin-top: -150px;
+    margin-right: 50px;
+    position: absolute;
+    top: 500px;
+}
+
+#last{
+    position: absolute;
+    top: 600px;
+}
+

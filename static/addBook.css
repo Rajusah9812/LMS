@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #8ce6f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 1.4rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a6268;
+}
+
+/* Back link styling */
+.back-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #6c757d;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.back-link a:hover {
+    color: #333333;
+    border-color: #333333;
+}
+
+.apple{
+    background-color: #aa77ae;
+    width: 500px;
+}
+
+#title{
+    margin-left: 25px;
+    width: 400px;  
+}
+
+#author{
+    margin-left: 25px;
+    width: 400px;  
+}

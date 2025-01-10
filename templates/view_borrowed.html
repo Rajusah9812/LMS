@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>View Borrowed Books</title>
+    <style>
+        body{
+        background: linear-gradient(235deg, #74ebd5, #9face6);
+         }
+         </style>
+</head>
+<body>
+    <h1>Borrowed Books</h1>
+    <ul>
+        {% for book in borrowed_books %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+        {% else %}
+            <li>No books are currently borrowed.</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
